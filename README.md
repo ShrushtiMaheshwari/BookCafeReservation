@@ -11,17 +11,20 @@ Table
 Reservation
 - reservation_id
 - table_id
-- customer_id
+- cust_id
 - num_customers
 - start_time
 - end_time
 
 Restaurant
 - tables
-- opening_time
-- closing_time
+- start_time
+- end_time
+- reservation_mgmt_system
+
+ReservationManagementSystem
 - reservations
 
-- make_reservation(customer)
+- make_reservation(customer, num_customers)
 - cancel_reservation(reservation)
 - update_after_completed_reservation(reservation)
